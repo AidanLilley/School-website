@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="script.js">
+
+	</script>
+</head>
+
+<body>
+
+	<!-- Computer Header and Nav -->
+	<div class="TopBar">
+		<div class="header">
+			<div class="headerContainer">
+				<p class="headerTitle">The Trinity Catholic School</p>
+				<!-- Secondary Nav -->
+				<nav id="HeaderNav4" class="Scrolled">
+					<a class="Dormant" href="index.html">Home</a>
+					<a class="Dormant" href="about.html">About School</a>
+					<a class="Dormant" href="year7.html">Year 7</a>
+					<a class="Dormant" href="application.html">Applications</a>
+					<a class="Active" href="visit.html">Visitations</a>
+				</nav>
+			</div>
+			<div class="headerContainer2">
+				<p class="Telephone">Tel: 0115 929 6251</p>
+				<img class="Logo" src="https://res.cloudinary.com/dodx34xim/image/upload/v1630189355/The_Trinity_Catholic_school__Nottingham_logo_fo9ljv.png" alt="School Logo">
+      </div>
+    
+    </div>
+    <!-- Primary Nav -->
+    <nav id="Nav4" class="Nav">
+      <a class="Dormant" href="index.html" >Home</a>
+        <a class="Dormant" href="about.html">About School</a>
+        <a class="Dormant" href="year7.html">Year 7</a>
+        <a class="Dormant" href="application.html">Applications</a>
+        <a class="Active" href="visit.html">Visitations</a>
+    </nav>
+</div>
+    <!-- Mobile Navigation  -->
+    <div class="MobileContainer">
+      <nav class="MobileNav">
+        <a class="expand" href="index.html" >Home</a>
+        <a class="expand" href="about.html">About School</a>
+        <a class="expand" href="year7.html">Year 7</a>
+        <a class="expand" href="application.html">Applications</a>
+        <a class="expand1" href="visit.html">Visitations</a>
+      </nav>
+    </div>
+
+    <div class="divider">
+    
+    </div>
+    <!-- Text Area  -->
+<section class="Information">
+  <h1 class="TextTitle"><u>Visitations and Open Evenings</u></h1>
+  <h1><u>Open Evenings</u></h1>
+  <p>The school frequently hosts open evenings for potential pupils and their parents, The next of these open evening is on the 30th of september at 5pm. Open evening typically occur at the start and end of every school year.</p>
+<hr>
+
+<h1><u>Visitation Form</u></h1>
+  <p>Below you will find a form which allows one to register the intent of attending a trinity open evening as well as a private visit outside of the normal open evenings.</p>
+  <hr>
+</section>
+    <!-- Visitation Form  -->
+    
+
+<main>
+<form id="survey-form" name="VisitForm" onsubmit="popUp(event);">
+<div id="form-div">
+  
+  
+  <div id="name-div"><label id="name-label" for="name"><strong>Name</strong></label>
+  <input id="name" type="text" name="name" placeholder="e.g John Smith"   required>
+  <br>
+  <br>
+  </div>
+    
+    
+  <div id="email-div"><label id="email-label" for="email"><strong>Email</strong></label>
+  <input id="email" name="email" type="email" placeholder="e.g name@email.com" required>
+  <br>
+  <br>
+  </div>
+    
+    
+  <div id="number-div"><label id="number-label" for="number"><strong>Age Of Child</strong></label>
+  <input id="number" name="age" type="number" min="1" max="120" placeholder="e.g 16" required>
+  <br>
+  </div>
+
+  <div id="radio-div2">
+  <br>
+    <label class="input-title"><u><strong>What Is Your Child's Gender?</strong></u></label>
+    
+  <input class="input-box" name="radio-selection2" value="M" type="radio">
+    <label class="inline-label">Male</label>
+  <br>
+  <input class="input-box" name="radio-selection2" value="F" type="radio">
+    <label class="inline-label">Female</label>
+  <br>
+  <input class="input-box" name="radio-selection2" value="O" type="radio">
+    <label class="inline-label">Other</label>
+  <br>
+  <br>
+  </div> 
+  
+  <div id="dropdown-div"><label><strong>What Designation Does Your Visit Fall Under?</strong></label>
+  <select id="dropdown">
+    <option disabled selected>Select An Option</option>
+    <option value="Year7">Year 7 Entree</option>
+    <option value="Year8/11">Year 8-11 Entree</option>
+    <option value="6Form">Sixth Form Entree</option>
+    
+    
+  </select>
+  <div>
+  
+  
+  <div id="radio-div">
+  <br>
+    <label class="input-title"><u><strong>Will This Vist Be Apart Of A School Open Evening?</strong></u></label>
+    
+  <input class="input-box" name="radio-selection" value="Open Evening" type="radio">
+    <label class="inline-label">Open Evening</label>
+  <br>
+  <input class="input-box" name="radio-selection" value="Private" type="radio">
+    <label class="inline-label">Private Visit</label>
+    <br>
+    <br>
+  </div>
+  
+  <div id="date-div"><label id="date-label" for="date"><strong>Date Of Visit (Non Open Evenings)</strong></label>
+  <input id="date" name="date" type="datetime" placeholder="e.g 30/08/2021">
+  <br>
+  </div>
+    
+  <div id="checkbox-div">
+  <br>
+    <label class="input-title"><u><strong>Subjects Or Departments Your Child Might Be Interested In?</strong></u><label id="small-label">(select all that apply)</label></label>
+  <input class="input-box" name="checkbox" value="ICT" type="checkbox">
+    <label class="inline-label">ICT</label>
+  <br>
+  <input class="input-box" name="checkbox" value="Science" type="checkbox">
+    <label class="inline-label">Science</label>
+  <br>
+  <input class="input-box" name="checkbox" value="Math" type="checkbox">
+    <label class="inline-label">Maths</label>
+  <br>
+  <input class="input-box" name="checkbox" value="History" type="checkbox">
+    <label class="inline-label">History</label>
+  <br>
+  <input class="input-box" name="checkbox" value="RE" type="checkbox">
+    <label class="inline-label">RE</label>
+  <br>
+  <input class="input-box" name="checkbox" value="Art" type="checkbox">
+    <label class="inline-label">Art</label>
+  <br>
+  <input class="input-box" name="checkbox" value="BS" type="checkbox">
+    <label class="inline-label">Business</label>
+  <br>
+  <input class="input-box" name="checkbox" value="DT" type="checkbox">
+    <label class="inline-label">Design and Technology</label>
+  <br>
+  <input class="input-box" name="checkbox" value="English" type="checkbox">
+    <label class="inline-label">English</label>
+  <br>
+  <input class="input-box" name="checkbox" value="Language" type="checkbox">
+    <label class="inline-label">Languages</label>
+  <br>
+  <input class="input-box" name="checkbox" value="Music" type="checkbox">
+    <label class="inline-label">Music</label>
+  <br>
+  </div>
+    
+  
+  <br>
+  <label><strong>Anything Further You Would Like To Add Or Any Special Circumstances You Might Have?</strong></label>
+  <textarea id="textbox" placeholder="Enter Your Comments Here..."></textarea>
+  <br>
+  <br>
+  <div id="submit-div">
+  <button class="submit" type="submit">Submit</button>
+    </div>
+</div>
+</form>
+<div id="popUpBackground">
+  <div id="popUpContent">
+    <button id="popUpExit" type="button" onclick="exit()">X</button>
+    <h1 id="popUpTitle">Form Submitted!</h1>
+    <div id="checkmark-container">
+      <div id="checkmark">
+        <div id="checkmark-stem"></div>
+        <div id="checkmark-kick"></div>
+      </div>
+    </div>
+    <p id="popUpInfo">Congratulations you have successfully completed the visitation form. Your application is currently being processed and we will be in contact via email as soon as possible.</p>
+  </div>
+</div>
+</main>
+
+    <footer class="footer">
+      
+      </footer>
+  </body>
+</html>
